@@ -6,7 +6,8 @@ def identity(s):
 
 def lowercase(s):
     return s.lower()
-
+    
+@commands.cooldown(1, 30, commands.BucketType.user)
 class StringReplacer(object):
 
     def process(self, string):
